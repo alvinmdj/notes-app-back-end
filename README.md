@@ -3,8 +3,35 @@
 ## Links
 
 - [Client app (by Dicoding)](http://notesapp-v1.dicodingacademy.com/)
-- [Chrome block insecure private network requests](chrome://flags/#block-insecure-private-network-requests)
 - [Dicoding Discussion: spread operator in update note handler](https://www.dicoding.com/academies/261/discussions/115597)
+- chrome://flags/#block-insecure-private-network-requests
+
+## Installation
+
+- Clone this repository:
+
+```sh
+git clone https://github.com/alvinmdj/notes-app-back-end.git
+```
+
+- Go to the root directory:
+
+```sh
+cd notes-app-back-end
+```
+
+- Install dependencies:
+
+```sh
+npm install
+```
+
+- Run (development):
+
+```sh
+# with nodemon
+npm run start
+```
 
 ## Dependencies
 
