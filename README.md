@@ -4,7 +4,7 @@ Web service deployed on Amazon EC2 (PM2 process manager).
 
 ## Links
 
-- [Client app](http://notesapp-v1.dicodingacademy.com/) (Enter web server API URL: <http://52.221.190.226:5000/>)
+- [Client app](http://notesapp-v1.dicodingacademy.com/)
 - [Dicoding Discussion: spread operator in update note handler](https://www.dicoding.com/academies/261/discussions/115597)
 - chrome://flags/#block-insecure-private-network-requests
 
