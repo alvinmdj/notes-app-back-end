@@ -2,7 +2,7 @@
 
 ## Links
 
-- [Client app (by Dicoding)](http://notesapp-v1.dicodingacademy.com/)
+- [Client app](http://notesapp-v1.dicodingacademy.com/)
 - [Dicoding Discussion: spread operator in update note handler](https://www.dicoding.com/academies/261/discussions/115597)
 - chrome://flags/#block-insecure-private-network-requests
 
