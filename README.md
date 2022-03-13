@@ -30,7 +30,7 @@ npm install
 
 ```sh
 # with nodemon
-npm run start
+npm run start-dev
 ```
 
 - Run lint:
