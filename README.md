@@ -33,6 +33,13 @@ npm install
 npm run start
 ```
 
+- Run lint:
+
+```sh
+# ESLint
+npm run lint
+```
+
 ## Dependencies
 
 - Hapi
