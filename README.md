@@ -1,8 +1,10 @@
 # Notes App Back-end (Hapi)
 
+Web service deployed on Amazon EC2 (PM2 process manager).
+
 ## Links
 
-- [Client app (Enter web server API URL: http://52.221.190.226:5000/)](http://notesapp-v1.dicodingacademy.com/)
+- [Client app](http://notesapp-v1.dicodingacademy.com/) (Enter web server API URL: http://52.221.190.226:5000/)
 - [Dicoding Discussion: spread operator in update note handler](https://www.dicoding.com/academies/261/discussions/115597)
 - chrome://flags/#block-insecure-private-network-requests
 
