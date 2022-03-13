@@ -1,7 +1,5 @@
 # Notes App Back-end (Hapi)
 
-Web service deployed on Amazon EC2 (PM2 process manager).
-
 ## Links
 
 - [Client app](http://notesapp-v1.dicodingacademy.com/)
