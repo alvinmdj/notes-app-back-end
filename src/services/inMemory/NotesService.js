@@ -30,7 +30,7 @@ class NotesService {
   }
 
   getNoteById(id) {
-    const note = this._notes.find((n) => n.id === id)[0];
+    const note = this._notes.filter((n) => n.id === id)[0];
 
     if (!note) {
       throw new Error('Note not found');
