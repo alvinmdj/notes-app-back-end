@@ -5,6 +5,12 @@
 - [Client app](http://notesapp-v1.dicodingacademy.com/)
 - chrome://flags/#block-insecure-private-network-requests
 
+## Requirements
+
+- Node.js v16.13.2+
+- NPM v8.1.2
+- Postman (for testing)
+
 ## Installation
 
 - Clone this repository:
