@@ -2,6 +2,8 @@
 
 ## Links
 
+- [Hapi](https://hapi.dev/)
+- [Joi](https://joi.dev/api/)
 - [Client app](http://notesapp-v1.dicodingacademy.com/)
 - chrome://flags/#block-insecure-private-network-requests
 
@@ -43,20 +45,6 @@ npm run start-dev
 ```sh
 # ESLint
 npm run lint
-```
-
-## Dependencies
-
-- Hapi
-
-```sh
-npm install @hapi/hapi
-```
-
-- nanoid
-
-```sh
-npm install nanoid
 ```
 
 ## Dev Dependencies
