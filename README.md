@@ -53,6 +53,17 @@ npm run start-dev
 npm run lint
 ```
 
+## Testing with Postman
+
+- Make sure the server is running: ```npm run start-dev```.
+
+- Open Postman and import:
+  - ```Notes API Test.postman_collection.json```
+  - ```Notes API Test.postman_environment.json```
+  **Note:** both files are available inside the ```postman``` folder.
+
+- In Postman, click ```Notes API Test collection``` > ```Run collection``` > ```Run Notes API Test```.
+
 ## Notes
 
 - node-pg-migrate:
