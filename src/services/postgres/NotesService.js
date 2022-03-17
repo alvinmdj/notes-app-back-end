@@ -44,7 +44,7 @@ class NotesService {
       throw new NotFoundError('Note not found');
     }
 
-    return result.rows.map(mapDBToModel);
+    return result.rows.map(mapDBToModel)[0];
   }
 
   async editNoteById(id, { title, body, tags }) {
