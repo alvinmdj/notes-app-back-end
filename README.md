@@ -4,6 +4,10 @@
 
 - [Hapi](https://hapi.dev/)
 - [Joi](https://joi.dev/api/)
+- [Node-Postgres](https://node-postgres.com/)
+- [PostgreSQL Data Type](https://www.postgresql.org/docs/current/datatype.html)
+- [PostgreSQL Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
+- [PostgreSQL Insert](https://www.postgresql.org/docs/current/sql-insert.html)
 - [Client app](http://notesapp-v1.dicodingacademy.com/)
 - chrome://flags/#block-insecure-private-network-requests
 
