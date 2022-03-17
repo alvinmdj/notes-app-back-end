@@ -5,6 +5,8 @@
 - [Hapi](https://hapi.dev/)
 - [Joi](https://joi.dev/api/)
 - [Node-Postgres](https://node-postgres.com/)
+- [Node-Pg-Migrate](https://www.npmjs.com/package/node-pg-migrate)
+- [PostgreSQL Best Practice](https://wiki.postgresql.org/wiki/Don't_Do_This)
 - [PostgreSQL Data Type](https://www.postgresql.org/docs/current/datatype.html)
 - [PostgreSQL Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
 - [PostgreSQL Insert](https://www.postgresql.org/docs/current/sql-insert.html)
@@ -51,7 +53,27 @@ npm run start-dev
 npm run lint
 ```
 
-## Dev Dependencies
+## Notes
+
+- node-pg-migrate:
+
+```sh
+# command available after setup migrate script in package.json
+npm run migrate ...
+
+# create new migration file
+migrate create '<migration name>'
+
+# execute all unrun up migration
+migrate up
+
+# execute one down migration from current state
+migrate down
+
+# execute previous migration
+# this will run a down migration followed with an up migration
+migrate redo
+```
 
 - Nodemon:
 
