@@ -95,12 +95,14 @@ npm run lint
 - Make sure the server is running: ```npm run start-dev```.
 
 - Open Postman and import:
-  - ```Notes API Test.postman_collection.json```
-  - ```Notes API Test.postman_environment.json```
+  - ```Notes API Test.postman_collection.json file```
+  - ```Notes API Test.postman_environment.json file```
 
   **Note:** both files are available inside the ```postman``` folder.
 
-- In Postman, click ```Notes API Test collection``` > ```Run collection``` > ```Run Notes API Test```.
+- In Postman:
+  - Set environment to ```Notes API Test collection```.
+  - Click ```Open Music API Test collection``` > ```Run collection``` > ```Run Notes API Test```.
 
 ## Personal Notes
 
