@@ -10,8 +10,17 @@
 - [PostgreSQL Data Type](https://www.postgresql.org/docs/current/datatype.html)
 - [PostgreSQL Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
 - [PostgreSQL Insert](https://www.postgresql.org/docs/current/sql-insert.html)
-- [Client app](http://notesapp-v1.dicodingacademy.com/)
+- [Client app v1](http://notesapp-v1.dicodingacademy.com/)
+- [Client app v2](http://notesapp-v2.dicodingacademy.com/)
 - chrome://flags/#block-insecure-private-network-requests
+
+## Features
+
+- CRUD notes
+- Store data in database
+- Data validation
+- Error handling
+- Custom exceptions
 
 ## Requirements
 
@@ -65,7 +74,7 @@ npm run lint
 
 - In Postman, click ```Notes API Test collection``` > ```Run collection``` > ```Run Notes API Test```.
 
-## Notes
+## Personal Notes
 
 - node-pg-migrate:
 
