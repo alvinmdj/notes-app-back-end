@@ -6,6 +6,7 @@
 - [Joi](https://joi.dev/api/)
 - [Node-Postgres](https://node-postgres.com/)
 - [Node-Pg-Migrate](https://www.npmjs.com/package/node-pg-migrate)
+- [Bcrypt](https://www.npmjs.com/package/bcrypt)
 - [PostgreSQL Best Practice](https://wiki.postgresql.org/wiki/Don't_Do_This)
 - [PostgreSQL Data Type](https://www.postgresql.org/docs/current/datatype.html)
 - [PostgreSQL Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
