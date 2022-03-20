@@ -25,7 +25,8 @@
 ## Requirements
 
 - Node.js v16.13.2+
-- NPM v8.1.2
+- NPM v8.1.2+
+- PostgreSQL v13.3+
 - Postman (for testing)
 
 ## Installation
@@ -46,6 +47,33 @@ cd notes-app-back-end
 
 ```sh
 npm install
+```
+
+- Copy ```.env.example``` and paste as ```.env```:
+
+```sh
+cp .env.example .env
+```
+
+- Create database and setup environment variables in ```.env```:
+
+```sh
+# server configs
+HOST=localhost
+PORT=5000
+
+# node-postgres configs
+PGUSER=<username>
+PGPASSWORD=<password>
+PGDATABASE=<dbname>
+PGHOST=localhost
+PGPORT=5432
+```
+
+- Run database migration:
+
+```sh
+npm run migrate up
 ```
 
 - Run (development):
