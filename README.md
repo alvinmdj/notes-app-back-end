@@ -10,6 +10,7 @@
 - [PostgreSQL Data Type](https://www.postgresql.org/docs/current/datatype.html)
 - [PostgreSQL Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
 - [PostgreSQL Insert](https://www.postgresql.org/docs/current/sql-insert.html)
+- [Postman: writes pre-request scripts](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#sending-requests-from-scripts)
 - [Client app v1](http://notesapp-v1.dicodingacademy.com/)
 - [Client app v2](http://notesapp-v2.dicodingacademy.com/)
 - chrome://flags/#block-insecure-private-network-requests
