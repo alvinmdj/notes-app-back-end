@@ -23,6 +23,8 @@
 - Data validation
 - Error handling
 - Custom exceptions
+- Token-based authentication
+- User authorization
 
 ## Requirements
 
