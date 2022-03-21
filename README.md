@@ -150,3 +150,30 @@ npm run lint
 
 # https://www.dicoding.com/academies/261/tutorials/14757?from=14752
 ```
+
+- PostgreSQL:
+
+```sh
+# Check version:
+psql --version
+postgres -V
+
+# login as root user:
+# -U equals --username
+psql -U postgres
+<enter password>
+
+# login as non-root user with the db:
+psql --username <username> --dbname <db-name>
+
+# After Logged In:
+
+# create user:
+CREATE USER <user-name> WITH ENCRYPTED PASSWORD '<password>';
+
+# create db:
+CREATE DATABASE <db-name>;
+
+# grant privileges to other user:
+GRANT ALL PRIVILEGES ON DATABASE <db-name> TO <user-name>;
+```
