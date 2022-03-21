@@ -3,6 +3,7 @@ const { Pool } = require('pg');
 const bcrypt = require('bcrypt');
 const InvariantError = require('../../exceptions/InvariantError');
 const NotFoundError = require('../../exceptions/NotFoundError');
+const AuthenticationError = require('../../exceptions/AuthenticationError');
 
 class UsersService {
   constructor() {
@@ -63,6 +64,21 @@ class UsersService {
     };
 
     const result = await this._pool.query(query);
+
+    if (!result.rows.length) {
+      throw new AuthenticationError('Invalid credentials');
+    }
+
+    const { id, password: hashedPassword } = result.rows[0];
+
+    // compare password from request with password from database (aliased as hashedPassword)
+    const match = await bcrypt.compare(password, hashedPassword);
+
+    if (!match) {
+      throw new AuthenticationError('Invalid credentials');
+    }
+
+    return id;
   }
 }
 
