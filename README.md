@@ -169,7 +169,7 @@ psql -U postgres
 # login as non-root user with the db:
 psql --username <username> --dbname <db-name>
 
-# After Logged In:
+# After logged in as root user:
 
 # create user:
 CREATE USER <user-name> WITH ENCRYPTED PASSWORD '<password>';
