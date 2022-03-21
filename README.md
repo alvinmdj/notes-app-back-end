@@ -20,12 +20,16 @@
 ## Features
 
 - CRUD notes
-- Store data in database
-- Data validation
+- Store data in database with PostgreSQL
+- Data validation with Joi
 - Error handling
 - Custom exceptions
-- Token-based authentication
-- User authorization
+- Token-based authentication with JWT [On-progress]
+- Authorization with Bearer Token [TODO]
+- Notes collaboration [TODO]
+- Message broker implementation with RabbitMQ [TODO]
+- Image upload [TODO]
+- Server-side caching implementation with Redis [TODO]
 
 ## Requirements
 
