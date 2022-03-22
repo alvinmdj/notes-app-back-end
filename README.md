@@ -173,6 +173,14 @@ psql -U postgres
 
 # login as non-root user with the db:
 psql --username <username> --dbname <db-name>
+<enter password>
+# example
+psql -U alvin --dbname notesapp
+
+# delete table data in database
+truncate <table-name-1>, <table-name-2>, <table-name-3>, ...;
+# example
+truncate notes, users, authentications;
 
 # After logged in as root user:
 
