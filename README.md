@@ -6,6 +6,7 @@
 - [Joi](https://joi.dev/api/)
 - [JWT](https://jwt.io/)
 - [Hapi-JWT](https://hapi.dev/module/jwt/)
+- [Auth with Hapi](https://hapi.dev/tutorials/auth/)
 - [Bcrypt](https://www.npmjs.com/package/bcrypt)
 - [Node-Postgres](https://node-postgres.com/)
 - [Node-Pg-Migrate](https://www.npmjs.com/package/node-pg-migrate)
