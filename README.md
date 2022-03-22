@@ -83,6 +83,7 @@ PGPORT=5432
 # JWT token
 ACCESS_TOKEN_KEY=<secure-random-key>
 REFRESH_TOKEN_KEY=<another-secure-random-key>
+ACCESS_TOKEN_AGE=<duration-in-seconds>
 ```
 
 - Run database migration:
