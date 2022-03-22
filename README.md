@@ -185,3 +185,13 @@ CREATE DATABASE <db-name>;
 # grant privileges to other user:
 GRANT ALL PRIVILEGES ON DATABASE <db-name> TO <user-name>;
 ```
+
+- Generate random key with crypto (node REPL):
+
+```sh
+# enter node repl
+node
+
+# generate random key
+require('crypto').randomBytes(64).toString('hex');
+```
