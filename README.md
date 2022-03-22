@@ -4,8 +4,9 @@
 
 - [Hapi](https://hapi.dev/)
 - [Joi](https://joi.dev/api/)
-- [Bcrypt](https://www.npmjs.com/package/bcrypt)
 - [JWT](https://jwt.io/)
+- [Hapi-JWT](https://hapi.dev/module/jwt/)
+- [Bcrypt](https://www.npmjs.com/package/bcrypt)
 - [Node-Postgres](https://node-postgres.com/)
 - [Node-Pg-Migrate](https://www.npmjs.com/package/node-pg-migrate)
 - [PostgreSQL Best Practice](https://wiki.postgresql.org/wiki/Don't_Do_This)
