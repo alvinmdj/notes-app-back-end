@@ -6,6 +6,10 @@ class AuthenticationsHandler {
     this._usersService = usersService;
     this._tokenManager = tokenManager;
     this._validator = validator;
+
+    this.postAuthenticationHandler = this.postAuthenticationHandler.bind(this);
+    this.putAuthenticationHandler = this.putAuthenticationHandler.bind(this);
+    this.deleteAuthenticationHandler = this.deleteAuthenticationHandler.bind(this);
   }
 
   async postAuthenticationHandler(request, h) {
@@ -65,6 +69,39 @@ class AuthenticationsHandler {
         status: 'success',
         message: 'Access Token has been updated',
         data: { accessToken },
+      };
+    } catch (error) {
+      if (error instanceof ClientError) {
+        const response = h.response({
+          status: 'fail',
+          message: error.message,
+        });
+        response.code(error.statusCode);
+        return response;
+      }
+
+      // Server error
+      const response = h.response({
+        status: 'error',
+        message: 'Internal server error',
+      });
+      response.code(500);
+      console.error(error);
+      return response;
+    }
+  }
+
+  async deleteAuthenticationHandler(request, h) {
+    try {
+      this._validator.validateDeleteAuthenticationPayload(request.payload);
+
+      const { refreshToken } = request.payload;
+      await this._authenticationsService.verifyRefreshToken(refreshToken);
+      await this._authenticationsService.deleteRefreshToken(refreshToken);
+
+      return {
+        status: 'success',
+        message: 'Refresh token has been deleted',
       };
     } catch (error) {
       if (error instanceof ClientError) {
