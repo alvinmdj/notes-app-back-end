@@ -25,12 +25,12 @@
 - Data validation with Joi
 - Error handling
 - Custom exceptions
-- Token-based authentication with JWT [On-progress]
-- Authorization with Bearer Token [TODO]
-- Notes collaboration [TODO]
-- Message broker implementation with RabbitMQ [TODO]
-- Image upload [TODO]
-- Server-side caching implementation with Redis [TODO]
+- Token-based authentication with JWT
+- Authorization with Bearer Token
+- Notes collaboration with database normalization
+- Message broker implementation with RabbitMQ
+- Image upload with Amazon S3
+- Server-side caching implementation with Redis
 
 ## Requirements
 
@@ -78,6 +78,10 @@ PGPASSWORD=<password>
 PGDATABASE=<dbname>
 PGHOST=localhost
 PGPORT=5432
+
+# JWT token
+ACCESS_TOKEN_KEY=<secure-random-key>
+REFRESH_TOKEN_KEY=<another-secure-random-key>
 ```
 
 - Run database migration:
@@ -142,7 +146,7 @@ migrate redo
 npm install nodemon --save-dev
 
 # Setup in package.json: "start": "nodemon ./src/server.js"
-npm run start
+npm run start-dev
 ```
 
 - ESLint:
