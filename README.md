@@ -24,8 +24,7 @@
 - CRUD notes
 - Store data in database with PostgreSQL
 - Data validation with Joi
-- Error handling
-- Custom exceptions
+- Error handling & custom exceptions
 - Token-based authentication with JWT
 - Authorization with Bearer Token
 - Notes collaboration with database normalization
