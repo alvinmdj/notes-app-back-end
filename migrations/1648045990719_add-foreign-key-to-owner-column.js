@@ -8,6 +8,7 @@ exports.up = (pgm) => {
   pgm.sql("UPDATE notes SET owner = 'old_notes' WHERE owner = NULL");
 
   // set foreign key constraints on owner column to id from users table
+  // format: fk_<tabel foreign key>.<kolom foreign key>_<tabel primary key>.<kolom primary key>
   pgm.addConstraint('notes', 'fk_notes.owner_users.id', 'FOREIGN KEY(owner) REFERENCES users(id) ON DELETE CASCADE');
 };
 
