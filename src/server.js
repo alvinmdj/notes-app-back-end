@@ -26,10 +26,10 @@ const CollaborationsValidator = require('./validator/collaborations');
 
 const init = async () => {
   // initialize service instances
-  const notesService = new NotesService();
+  const collaborationsService = new CollaborationsService();
+  const notesService = new NotesService(collaborationsService);
   const usersService = new UsersService();
   const authenticationsService = new AuthenticationsService();
-  const collaborationsService = new CollaborationsService();
 
   const server = Hapi.server({
     port: process.env.PORT,
