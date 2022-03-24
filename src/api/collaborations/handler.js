@@ -16,7 +16,7 @@ class CollaborationsHandler {
       const { id: credentialId } = request.auth.credentials;
       const { noteId, userId } = request.payload;
 
-      this._notesService.verifyNoteOwner(noteId, credentialId);
+      await this._notesService.verifyNoteOwner(noteId, credentialId);
       const collaborationId = await this._collaborationsService.addCollaboration(noteId, userId);
 
       const response = h.response({
@@ -30,7 +30,7 @@ class CollaborationsHandler {
       if (error instanceof ClientError) {
         const response = h.response({
           status: 'fail',
-          error: error.message,
+          message: error.message,
         });
         response.code(error.statusCode);
         return response;
@@ -39,7 +39,7 @@ class CollaborationsHandler {
       // Server Error
       const response = h.response({
         status: 'error',
-        error: 'Internal Server Error',
+        message: 'Internal Server Error',
       });
       response.code(500);
       console.error(error);
@@ -64,7 +64,7 @@ class CollaborationsHandler {
       if (error instanceof ClientError) {
         const response = h.response({
           status: 'fail',
-          error: error.message,
+          message: error.message,
         });
         response.code(error.statusCode);
         return response;
@@ -73,7 +73,7 @@ class CollaborationsHandler {
       // Server Error
       const response = h.response({
         status: 'error',
-        error: 'Internal Server Error',
+        message: 'Internal Server Error',
       });
       response.code(500);
       console.error(error);
