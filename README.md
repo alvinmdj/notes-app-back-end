@@ -185,7 +185,7 @@ psql -U alvin --dbname notesapp
 # delete table data in database
 truncate <table-name-1>, <table-name-2>, <table-name-3>, ...;
 # example
-truncate notes, users, authentications;
+truncate notes, users, authentications, collaborations;
 
 # After logged in as root user:
 
