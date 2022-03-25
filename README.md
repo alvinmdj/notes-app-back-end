@@ -177,10 +177,14 @@ psql -U postgres
 <enter password>
 
 # login as non-root user with the db:
-psql --username <username> --dbname <db-name>
+# -d equals --dbname
+psql --username <username> -d <db-name>
 <enter password>
 # example
-psql -U alvin --dbname notesapp
+psql -U alvin -d notesapp
+
+# show all tables
+\dt
 
 # delete table data in database
 truncate <table-name-1>, <table-name-2>, <table-name-3>, ...;
@@ -197,6 +201,9 @@ CREATE DATABASE <db-name>;
 
 # grant privileges to other user:
 GRANT ALL PRIVILEGES ON DATABASE <db-name> TO <user-name>;
+
+# quit postgres:
+\q
 ```
 
 - Generate random key with crypto (node REPL):
