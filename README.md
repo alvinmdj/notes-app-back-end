@@ -178,7 +178,7 @@ psql -U postgres
 
 # login as non-root user with the db:
 # -d equals --dbname
-psql --username <username> -d <db-name>
+psql -U <username> -d <dbname>
 <enter password>
 # example
 psql -U alvin -d notesapp
@@ -186,21 +186,24 @@ psql -U alvin -d notesapp
 # show all tables
 \dt
 
+# show column names, data types, indexes, constraints, etc. of a table
+\d+ <table_name>
+
 # delete table data in database
-truncate <table-name-1>, <table-name-2>, <table-name-3>, ...;
+truncate <table_name_1>, <table_name_2>, <table_name_3>, ...;
 # example
 truncate notes, users, authentications, collaborations;
 
 # After logged in as root user:
 
 # create user:
-CREATE USER <user-name> WITH ENCRYPTED PASSWORD '<password>';
+CREATE USER <username> WITH ENCRYPTED PASSWORD '<password>';
 
 # create db:
-CREATE DATABASE <db-name>;
+CREATE DATABASE <dbname>;
 
 # grant privileges to other user:
-GRANT ALL PRIVILEGES ON DATABASE <db-name> TO <user-name>;
+GRANT ALL PRIVILEGES ON DATABASE <dbname> TO <username>;
 
 # quit postgres:
 \q
