@@ -31,7 +31,7 @@ class ExportsHandler {
           status: 'fail',
           message: error.message,
         });
-        response.code(201);
+        response.code(400);
         return response;
       }
 
