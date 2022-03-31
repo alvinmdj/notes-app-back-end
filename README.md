@@ -3,21 +3,22 @@
 ## Links
 
 - [Hapi](https://hapi.dev/)
+- [ESLint](https://eslint.org/)
 - [Joi](https://joi.dev/api/)
-- [JWT](https://jwt.io/)
-- [Hapi-JWT](https://hapi.dev/module/jwt/)
-- [Auth with Hapi](https://hapi.dev/tutorials/auth/)
-- [Bcrypt](https://www.npmjs.com/package/bcrypt)
-- [RabbitMQ](https://www.rabbitmq.com/)
 - [PostgreSQL](https://www.postgresql.org/)
-- [Node-Postgres](https://node-postgres.com/)
-- [Node-Pg-Migrate](https://www.npmjs.com/package/node-pg-migrate)
+- [JWT](https://jwt.io/)
+- [RabbitMQ](https://www.rabbitmq.com/)
+- [Hapi-JWT](https://hapi.dev/module/jwt/)
+- [Authentication with Hapi](https://hapi.dev/tutorials/auth/)
+- [amqplib](https://www.npmjs.com/package/amqplib)
+- [bcrypt](https://www.npmjs.com/package/bcrypt)
+- [node-postgres](https://node-postgres.com/)
+- [node-pg-migrate](https://www.npmjs.com/package/node-pg-migrate)
 - [PostgreSQL Best Practice](https://wiki.postgresql.org/wiki/Don't_Do_This)
 - [PostgreSQL Data Type](https://www.postgresql.org/docs/current/datatype.html)
 - [PostgreSQL Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
 - [PostgreSQL Insert](https://www.postgresql.org/docs/current/sql-insert.html)
 - [Postman: writes pre-request scripts](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#sending-requests-from-scripts)
-- [ESLint](https://eslint.org/)
 - [Client app v1](http://notesapp-v1.dicodingacademy.com/)
 - [Client app v2](http://notesapp-v2.dicodingacademy.com/)
 - chrome://flags/#block-insecure-private-network-requests
@@ -31,7 +32,7 @@
 - Token-based authentication with JWT
 - Authorization with Bearer Token
 - Notes collaboration with database normalization
-- Message broker implementation with RabbitMQ
+- Export notes with message broker implementation using RabbitMQ
 - Image upload with Amazon S3
 - Server-side caching implementation with Redis
 
@@ -86,6 +87,9 @@ PGPORT=5432
 ACCESS_TOKEN_KEY=<secure-random-key>
 REFRESH_TOKEN_KEY=<another-secure-random-key>
 ACCESS_TOKEN_AGE=<duration-in-seconds>
+
+# Message broker
+RABBITMQ_SERVER=amqp://localhost
 ```
 
 - Run database migration:
