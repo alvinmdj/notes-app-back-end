@@ -227,3 +227,16 @@ node
 # generate random key
 require('crypto').randomBytes(64).toString('hex');
 ```
+
+- RabbitMQ:
+
+```sh
+# activate rabbitmq_management plugin (first time only):
+# open RabbitMQ Command Prompt (sbin dir) and run the following command:
+rabbitmq-plugins.bat enable rabbitmq_management 
+# note: this is for Windows OS
+
+# access RabbitMQ management webpage: 
+# http://localhost:15672
+# login as 'guest' by default (both username & password)
+```
