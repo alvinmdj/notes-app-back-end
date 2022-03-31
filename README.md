@@ -38,11 +38,12 @@
 
 ## Requirements
 
-- Node.js v16.13+
-- NPM v8.1+
-- PostgreSQL v13.3+
-- RabbitMQ v3.9+
-- Postman (for testing)
+- [Node.js v16.13+](https://nodejs.org/en/)
+- [NPM v8.1+](https://www.npmjs.com/package/npm)
+- [PostgreSQL v13.3+](https://www.postgresql.org/)
+- [RabbitMQ v3.9+](https://www.rabbitmq.com/)
+- [Postman](https://www.postman.com/) (for testing)
+- [notes-app-queue-consumer](https://github.com/alvinmdj/notes-app-queue-consumer) to enable notes export feature
 
 ## Installation
 
@@ -102,8 +103,11 @@ npm run migrate up
 - Run (development):
 
 ```sh
-# with nodemon
+# notes app back-end
 npm run start-dev
+
+# note: run the notes-app-queue-consumer to enable notes export feature
+# https://github.com/alvinmdj/notes-app-queue-consumer
 ```
 
 - Run lint:
