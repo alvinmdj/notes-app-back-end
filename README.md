@@ -8,6 +8,8 @@
 - [Hapi-JWT](https://hapi.dev/module/jwt/)
 - [Auth with Hapi](https://hapi.dev/tutorials/auth/)
 - [Bcrypt](https://www.npmjs.com/package/bcrypt)
+- [RabbitMQ](https://www.rabbitmq.com/)
+- [PostgreSQL](https://www.postgresql.org/)
 - [Node-Postgres](https://node-postgres.com/)
 - [Node-Pg-Migrate](https://www.npmjs.com/package/node-pg-migrate)
 - [PostgreSQL Best Practice](https://wiki.postgresql.org/wiki/Don't_Do_This)
@@ -15,6 +17,7 @@
 - [PostgreSQL Constraints](https://www.postgresql.org/docs/current/ddl-constraints.html)
 - [PostgreSQL Insert](https://www.postgresql.org/docs/current/sql-insert.html)
 - [Postman: writes pre-request scripts](https://learning.postman.com/docs/writing-scripts/script-references/postman-sandbox-api-reference/#sending-requests-from-scripts)
+- [ESLint](https://eslint.org/)
 - [Client app v1](http://notesapp-v1.dicodingacademy.com/)
 - [Client app v2](http://notesapp-v2.dicodingacademy.com/)
 - chrome://flags/#block-insecure-private-network-requests
@@ -162,6 +165,7 @@ npx eslint --init
 npm run lint
 
 # https://www.dicoding.com/academies/261/tutorials/14757?from=14752
+# or refers to the official documentation: https://eslint.org/docs/user-guide/getting-started
 ```
 
 - PostgreSQL:
