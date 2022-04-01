@@ -14,19 +14,19 @@ class UploadsHandler {
       this._validator.validateImageHeaders(data.hapi.headers);
 
       // * using local storage
-      // const filename = await this._service.writeFile(data, data.hapi);
+      const filename = await this._service.writeFile(data, data.hapi);
 
       // * using Amazon S3
-      const fileLocation = await this._service.writeFile(data, data.hapi);
+      // const fileLocation = await this._service.writeFile(data, data.hapi);
 
       const response = h.response({
         status: 'success',
         data: {
           // * using local storage
-          // fileLocation: `http://${process.env.HOST}:${process.env.PORT}/upload/images/${filename}`,
+          fileLocation: `http://${process.env.HOST}:${process.env.PORT}/upload/images/${filename}`,
 
           // * using Amazon S3
-          fileLocation,
+          // fileLocation,
         },
       });
       response.code(201);
