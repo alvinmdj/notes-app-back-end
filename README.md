@@ -10,6 +10,8 @@
 - [RabbitMQ](https://www.rabbitmq.com/)
 - [Hapi-JWT](https://hapi.dev/module/jwt/)
 - [Hapi-Inert](https://hapi.dev/module/inert/api/?v=6.0.5)
+- [AWS S3 for Node.js](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/S3.html#upload-property)
+- [AWS-SDK](https://www.npmjs.com/package/aws-sdk)
 - [Authentication with Hapi](https://hapi.dev/tutorials/auth/)
 - [amqplib](https://www.npmjs.com/package/amqplib)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
@@ -35,7 +37,7 @@
 - Authorization with Bearer Token
 - Notes collaboration with database normalization
 - Export notes with message broker implementation using RabbitMQ
-- Image upload with Amazon S3
+- Image upload and storage with Amazon S3 (or locally)
 - Server-side caching implementation with Redis
 
 ## Requirements
