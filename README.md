@@ -9,6 +9,7 @@
 - [JWT](https://jwt.io/)
 - [RabbitMQ](https://www.rabbitmq.com/)
 - [Hapi-JWT](https://hapi.dev/module/jwt/)
+- [Hapi-Inert](https://hapi.dev/module/inert/api/?v=6.0.5)
 - [Authentication with Hapi](https://hapi.dev/tutorials/auth/)
 - [amqplib](https://www.npmjs.com/package/amqplib)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
