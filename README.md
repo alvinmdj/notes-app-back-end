@@ -96,6 +96,11 @@ ACCESS_TOKEN_AGE=<duration-in-seconds>
 
 # Message broker
 RABBITMQ_SERVER=amqp://localhost
+
+# aws-sdk (optional if you want to try Amazon S3, also look at the amazon-s3-implementation branch for the project configuration)
+AWS_ACCESS_KEY_ID=<aws-access-key-id>
+AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
+AWS_BUCKET_NAME=<aws-bucket-name>
 ```
 
 - Run database migration:
