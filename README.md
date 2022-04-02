@@ -105,6 +105,9 @@ RABBITMQ_SERVER=amqp://localhost
 AWS_ACCESS_KEY_ID=<aws-access-key-id>
 AWS_SECRET_ACCESS_KEY=<aws-secret-access-key>
 AWS_BUCKET_NAME=<aws-bucket-name>
+
+# Redis
+REDIS_SERVER=localhost
 ```
 
 - Run database migration:
