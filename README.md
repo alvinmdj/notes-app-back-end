@@ -9,6 +9,8 @@
 - [JWT](https://jwt.io/)
 - [RabbitMQ](https://www.rabbitmq.com/)
 - [Redis](https://redis.io/)
+- [Memurai (Redis alt for windows)](https://www.memurai.com/)
+- [Redis Package for JavaScript](https://www.npmjs.com/package/redis)
 - [Hapi-JWT](https://hapi.dev/module/jwt/)
 - [Hapi-Inert](https://hapi.dev/module/inert/api/?v=6.0.5)
 - [Caching in Hapi](https://hapi.dev/tutorials/caching/)
@@ -254,4 +256,33 @@ rabbitmq-plugins.bat enable rabbitmq_management
 # access RabbitMQ management webpage: 
 # http://localhost:15672
 # login as 'guest' by default (both username & password)
+```
+
+- Memurai:
+
+```sh
+# access memurai-cli
+memurai-cli
+
+# below commands is usable inside memurai-cli
+
+# test memurai (if it returns 'PONG' == success)
+ping
+
+# set (create)
+# syntax: SET <key> <value> [EX expirationInSecond | PX expirationInMilliseconds]
+SET name "alvin"
+SET age "18" EX 30 # expired in 30 seconds
+
+# get
+# syntax: GET <key>
+GET name
+
+# set (update) will override old value from the same key
+SET name "martin"
+
+# delete
+# syntax: DEL <key> [key2] [key3] ...
+DEL name
+DEL name age
 ```
